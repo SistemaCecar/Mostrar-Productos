@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestionProductos.css">
+    <title>Gestion Productos</title>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="inicioAdmin.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Administrador</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form class="formulario">
+            <h1>GESTION DE PRODUCTOS</h1>
+            <label>CODIGO:</label>
+            <input type="text" class="focus">
+            <label>NOMBRE:</label>
+            <input type="text">
+            <label>UNIDADES:</label>
+            <input type="number" class="unidades">
+            <label>CATEGORIA:</label>
+            <select name="categorias" class="opciones">
+                <option value="select">---Seleccione una categoria---</option>
+                <option value="categoria 1">categoria 1</option>
+                <option value="categoria 2">categoria 2</option>
+                <option value="categoria 3">categoria 3</option>
+                <option value="categoria 4">categoria 4</option>
+            </select>
+            <label>PRECIO NETO:</label>
+            <input type="number" class="precioNeto"> cop
+            <label>STOCK MINIMO:</label>
+            <input type="number" class="stockMinimo">
+            <label>PORCENTAJE GANANCIAS:</label>
+            <input type="text">
+            <label>PRECIO VENTA:</label>
+            <input type="number" placeholder="calcule el precio" class="precioV">
+            <br><input type="button" value="Calcular Precio Venta" class="boton">
+            <label>DESCRIPCION:</label>
+            <textarea name="descripcion" cols="30" rows="7"
+                placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa, est iste adipisci tempora nihil? Autem architecto corrupti dolor, recusandae consequuntur maiores quas."></textarea>
+            <label>REFERENCIAS:</label>
+            <textarea name="referencias" cols="30" rows="7"
+                placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa, est iste adipisci tempora nihil? Autem architecto corrupti dolor, recusandae consequuntur maiores quas."></textarea>
+            <br><input type="submit" value="Actualizar Producto" class="boton">
+            <input type="submit" value="Registrar Producto" class="boton">
+        </form>
+    </section>
+</body>
+
+</html>

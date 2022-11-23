@@ -1,0 +1,56 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+    background-color: rgb(0, 238, 255);
+}
+
+td {
+    text-align: center;
+    background-color: rgb(215, 252, 252);
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondo {
+    background-image: url("https://img.freepik.com/foto-gratis/composicion-colorida-fregona-esponjas-trapos-guantes-detergentes-limpieza-general-fondo-concepto-servicio-limpieza_169016-10763.jpg?w=2000");
+
+}
+
+#header {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav>li {
+    float: left;
+}
+
+.nav li a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}

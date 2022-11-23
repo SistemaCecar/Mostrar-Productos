@@ -1,0 +1,150 @@
+body {
+    background-image: url(https://img.freepik.com/foto-gratis/composicion-colorida-esponjas-trapos-guantes-detergente-limpieza-general-fondo-concepto-servicio-limpieza_169016-10765.jpg?w=2000);
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 15px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 25px;
+    height: 100px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.inicio {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+    cursor: pointer;
+}
+
+.contenerdorIzq {
+    width: 45%;
+}
+
+.contenerdorDer {
+    width: 45%;
+}
+
+.flexContainer .contenerdorDer div {
+    align-items: center;
+}
+
+/*IMAGENES*/
+.logo {
+    height: auto;
+    width: 15%;
+    margin-right: 5px;
+}
+
+.icono {
+    height: auto;
+    width: 8%;
+    margin-right: 10px;
+}
+
+.foto {
+    height: auto;
+    width: 18%;
+    border: solid;
+    margin-left: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.flexContainer .contenerdorIzq a:hover {
+    cursor: pointer;
+}
+
+/*MINI MENU*/
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+div .contenerdorDer {
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.miniMenu {
+    display: none;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    min-width: 130px;
+}
+
+.principal li:hover>ul {
+    display: block;
+    background-color: rgba(138, 138, 138, 0.398);
+    border-radius: 30px;
+}
+
+/*FORMULARIO*/
+section {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.formulario {
+    border-radius: 30px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.formulario label,
+.tituloRegistro {
+    display: block;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.unidades,
+.stockMinimo {
+    width: 100px;
+}
+
+.precioNeto,
+.precioV {
+    width: 150px;
+}
+
+input,
+select {
+    background: none;
+    color: white;
+    border: solid white 1px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.boton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(0, 123, 255);
+    cursor: pointer;
+    height: 30px;
+    margin: 10px;
+}
+
+.opciones {
+    background-color: black;
+}

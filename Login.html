@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilologin.css">
+    <title>JAsoft</title>
+    <script>
+        function login() {
+            const user = document.getElementById("usuario").value;
+            const password = document.getElementById("contraseña").value;
+            if (user == "admin" && password == "123") {
+                window.open("inicioAdmin.html");
+            } else if (user == "gerente" && password == "124") {
+                window.open("menuGerente.html");
+            }
+            else if (user == "secretaria" && password == "125") {
+                window.open("InicioSecretatia.html");
+            }
+            else if (user == "vendedor" && password == "126") {
+                window.open("InicioVendedor.html");
+            }
+            else {
+                alert("Usuario o Contraseña incorrectos");
+                user.document = "";
+                password.document = "";
+                user.focus();
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="Login.html">
+        <img class="iconoUsuario" src="usuario.png" alt="icono de usuario">
+        <label>Usuario:</label>
+        <input type="text" id="usuario">
+
+        <label>Contraseña:</label>
+        <input type="password" id="contraseña"><br>
+        <button type="submit" onclick="login()">Ingresar</button>
+        <button type="close" onclick="login()">Cancelar</button>
+    </form>
+</body>
+
+</html>

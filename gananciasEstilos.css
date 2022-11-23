@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../media/pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contenedor {
+    width: 1000px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+
+}
+
+button {
+
+    padding: 8px;
+    border-radius: 5px;
+    border-color: rgb(138, 184, 178);
+    border-style: solid;
+    background-color: rgba(34, 162, 235, 0.5);
+    position: relative;
+    right: 140px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    bottom: 25px;
+
+
+
+}
+
+button a {
+    text-decoration: none;
+    text-decoration: solid;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    color: gainsboro;
+}
+
+button>a:hover {
+    color: gray;
+}

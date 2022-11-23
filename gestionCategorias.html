@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAsoft</title>
+    <link rel="stylesheet" href="estiloPagePrinciipal.css">
+    <link rel="stylesheet" href="estilosRegistro.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="utilidades.js"></script>
+</head>
+<body>
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="inicioAdmin.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Admistrador</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="flexContainer">
+    <section class="form-register contenedorIzquierdo">
+
+        <h5>ID CATEGORIA</h5>
+        <input class="controls" type="number" id="CategoryID">
+
+        <h5>NOMBRE DE LA CATEGORIA</h5>
+        <input class="controls" type="text" id="CategoryName">
+
+        <button class="butons" onclick="agregarCategoria()">CREAR CATEGORIA</button>&emsp;&emsp;
+        <button class="butons">CANCELAR</button>
+
+    </section>
+
+    <article class="contenedorDerecho">
+        <table style="width: 85%;" class="center" id="CategoryTable">
+            <tr>
+                <th>ID PRODUCTOS</th>
+                <th>NOMBRE DEL PRODUCTO</th>
+            </tr>
+        </table>
+    </article>
+</div>
+</body>
+</html>

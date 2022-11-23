@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestionProductos.css">
+    <title>Gestion Empleados</title>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="inicioAdmin.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Administrador</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form class="formulario">
+            <h1 class="tituloRegistro">REGISTRO DE EMPLEADOS</h1>
+            <label>NOMBRE::</label>
+            <input type="text">
+            <label>APELLIDOS:</label>
+            <input type="text">
+            <label>TIPO DE IDENTIFICACION:</label>
+            <select name="identificacion" class="opciones">
+                <option value="select">---Seleccione---</option>
+                <option value="categoria 1">Cedula de Ciudadania</option>
+                <option value="categoria 2">Tarjeta de Identidad</option>
+                <option value="categoria 3">Pasaporte</option>
+                <option value="categoria 4">NIT</option>
+            </select>
+            <label>NUMERO IDENTIFICACION:</label>
+            <input type="number" class="precioNeto">
+            <label>FECHA DE NACIMIENTO:</label>
+            <input type="date" class="stockMinimo">
+            <label>TELEFONO:</label>
+            <input type="tel">
+            <label>CARGO:</label>
+            <select name="cargo" class="opciones">
+                <option value="select">---Seleccione---</option>
+                <option value="categoria 1">Administrador</option>
+                <option value="categoria 2">Genrente</option>
+                <option value="categoria 3">Secretaria</option>
+                <option value="categoria 4">Vendedor</option>
+            </select>
+            <label>CONTRASEÑA:</label>
+            <input type="password">
+            <br><input type="submit" value="REGISTRAR" class="boton">
+            <input type="button" value="CANCELAR" class="boton">
+        </form>
+    </section>
+</body>
+
+</html>

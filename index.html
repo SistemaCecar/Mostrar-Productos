@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloPagePrinciipal.css">
+    <title>Mostrar Productos</title>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="index.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <ul class="principal">
+                <li>
+                    <img src="usuario.png" alt="foto del empleado" class="foto">
+                    <ul class="miniMenu">
+                        <li>
+                            <a href="Login.html">Inicio Sesion</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header><br><br><br><br>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Axion.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Axion</p>
+                    <span class="precio">$ 1.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Clorox.jfif" alt="">
+                    </div>
+                    <p class="descripcion" id>Clorox </p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Detergente Fab.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Detergente Fab</p>
+                    <span class="precio">$ 3.600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Fabuloso.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Fabuloso</p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Jabon Dersa.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Jabon Dersa</p>
+                    <span class="precio">$ 2.800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Jabon Liquido.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Jabon Liquido</p>
+                    <span class="precio">$ 2.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Jabon Rey.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Jabon Rey</p>
+                    <span class="precio">$ 2.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Lava Platos.jfif" alt="">
+                    </div>
+                    <p class="descripcion">Lava platos </p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="Productos"></h2>
+                <p id="descripcion"></p>
+
+                <span class="precio" id="precio"></span>
+
+                <div class="fila">
+                    <div class="Cantidad">
+                        <label for="">Cantidad</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script><br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="flexContainer">
+        <div class="footerIzq">
+            <h3>MISIÓN</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sapiente ducimus nisi minus vero libero amet
+            est sed! Quia nulla quae dolore rerum pariatur quas sint tempora laborum quasi eos? Error sapiente ducimus
+            nisi minus vero libero amet est sed! Quia nulla quae dolore rerum pariatur quas sint tempora
+        </div>
+        <div class="footerCen">
+            <h3>VISIÓN</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sapiente ducimus nisi minus vero libero amet
+            est sed! Quia nulla quae dolore rerum pariatur quas sint tempora laborum quasi eos? Error sapiente ducimus
+            nisi minus vero libero amet est sed! Quia nulla quae dolore rerum pariatur quas sint tempora
+        </div>
+        <div class="footerDer">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+        </div>
+    </footer>
+
+</body>
+
+</html>

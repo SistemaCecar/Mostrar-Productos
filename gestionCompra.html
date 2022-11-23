@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAsoft</title>
+    <link rel="stylesheet" href="estiloPagePrinciipal.css">
+    <link rel="stylesheet" href="estilosRegistro.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="utilidades.js"></script>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="inicioAdmin.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Administrador</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="flexContainer">
+        <section class="form-register contenedorIzquierdo">
+            <h4>REGISTRO</h4>
+            <h5>ID COMPRA</h5>
+            <input class="controls" type="number" id="idCompra">
+
+            <h5>ID PRODUCTO</h5>
+            <input class="controls" type="number" id="idProducto">
+
+            <form action="/action_page.php">
+                <label for="birthday">
+                    <h5>FECHA</h5>
+                </label>
+                <input class="controls" type="date" id="fecha">
+            </form><br>
+
+            <h5>NOMBRE DEL PRODUCTO</h5>
+            <input class="controls" type="text" id="productName">
+
+            <h5>UNIDADES</h5>
+            <input class="controls" type="number" id="unidades">
+
+            <select style="background-color: black; color: white;" id="categorias">
+                <option>CATEGORIA</option>
+                <option>Categoria 1</option>
+                <option>Categoria 2</option>
+                <option>Categoria 3</option>
+            </select>
+
+            <h5>PRECIO COMPRA</h5>
+            <input class="controls" type="number" id="precioCompra">
+
+            <h5>PRECIO UNIDAD</h5>
+            <input class="controls" type="number" id="PrecioUnidad">
+
+            <h5>NOMBRE PROVEEDOR</h5>
+            <input class="controls" type="text" id="nombreProveedor">
+
+            <h5>CONTACTO PROVEEDOR</h5>
+            <input class="controls" type="number" id="contactoProveedor">
+
+            <button class="butons" onclick="agregarCompra()">REGISTRAR</button>&emsp;&emsp;
+            <button class="butons">CANCELAR</button>
+
+        </section>
+
+        <article class="contenedorDerecho">
+            <h1>REGISTROS</h1>
+            <table style="width: 85%;" class="center" id="gestionCompras">
+                <tr>
+                    <th>ID COMPRA</th>
+                    <th>ID PRODUCTOS</th>
+                    <th>FECHA</th>
+                    <th>NOMBRE DEL PRODUCTO</th>
+                    <th>UNIDADES</th>
+                    <th>CETEGORIAS</th>
+                    <th>PRECIO COMPRA</th>
+                    <th>PRECIO UNIDAD</th>
+                    <th>NOMBRE PROVEEDOR</th>
+                    <th>CONTACTO PROVEEDOR</th>
+                </tr>
+
+            </table>
+        </article>
+    </div>
+</body>
+
+</html>

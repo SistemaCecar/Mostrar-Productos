@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAsoft</title>
+    <link rel="stylesheet" href="estiloPagePrinciipal.css">
+    <link rel="stylesheet" href="estilosRegistro.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="utilidades.js"></script>
+</head>
+
+<body class="fondo">
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="InicioVendedor.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Vendedor</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="form-register">
+        <h4>DATOS DE REGISTRO</h4>
+        <select name="Identificación" id="Identificación" class="registro">
+            <option value="N°ID" >TIPO DE IDENTIFICACIÓN
+            <option value="Cedula">CC</option>
+            <option value="Cedula Extrangería">CE</option>
+            <option value="TarjetaIdentidad">TI</option>
+            <option value="Pasaporte">PP</option>
+            </option>
+        </select><br>
+        <input class="controls" type="number" name="number" id="number" placeholder="Ingrese N° Identificación">
+        <form action="/action_page.php">
+            <label for="birthday">
+                <h5>FECHA DE NACIMIENTO</h5>
+            </label>
+            <input class="controls" type="date">
+        </form><br>
+
+        <h5>NOMBRE</h5>
+        <input class="controls" type="text" placeholder="Digite su nombres">
+
+        <h5>APELLIDOS</h5>
+        <input class="controls" type="text" placeholder="Digite sus apellidos">
+
+        <h5>TELÉFONOS</h5>
+        <input class="controls" type="number" id="telefono" placeholder="Digite su telefono">
+        <button class="butons" onclick="agregarTelefono()" id="Telefono">AGREGAR</button>
+        <ol id="listaTelefonos">
+            Lista de Telefonos
+        </ol>
+
+        <h5>REDES SOCIALES</h5>
+        <input class="controls" type="text" id="redSocial" placeholder="Digite red social">
+        <button class="butons" onclick="agregarRed()">AGREGAR</button>
+        <ol id="listaRedesS">
+            Redes Sociales
+        </ol>
+
+        <h5>CORREO ELECTRONICO</h5>
+        <input class="controls" type="text" placeholder="Digite su correo" id="correoE">
+        <button class="butons" onclick="agregarCorreo()">AGREGAR</button>
+        <ol id="listaCorreos">
+            E-mails
+        </ol>
+        <form action="/action_page.php">
+            <input type="checkbox" id="E-mail" name="E-mail" value="E-mail">
+            <label for="vehicle1">Recibir factura al correo </label>
+        </form><br>
+        <button class="butons" type="submit">REGISTRAR CLIENTE</button>&emsp;&emsp;
+        <button class="butons">CANCELAR REGISTRO</button>
+
+    </section>
+</body>
+
+</html>

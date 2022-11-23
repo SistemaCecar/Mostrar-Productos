@@ -1,0 +1,53 @@
+.form-register {
+    width: 300px;
+    height: auto;
+    background: #000000;
+    padding: 30px;
+    margin: auto;
+    border-radius: 40px;
+    color: white;
+}
+
+.contenedorIzquiredo {
+    width: 30%;
+}
+
+.contenedorDerecho {
+    width: 67%;
+}
+
+.flexContainer {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.controls {
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register .butons {
+    width: 40%;
+    background: #1f53c5;
+    border: none;
+    padding: 1px;
+    color: white;
+    margin: 4px;
+}
+
+.form-register .butons1 {
+    width: 40%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 15px;
+}

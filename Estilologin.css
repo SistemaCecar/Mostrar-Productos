@@ -1,0 +1,74 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconoUsuario {
+    height: 10%;
+    width: 30%;
+}
+
+form {
+    height: auto;
+    width: 25%;
+    padding: 0;
+    background-color: rgb(19, 198, 234);
+    text-align: center;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    color: black;
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="submit"],
+input[type="close"] {
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 30px;
+    width: 200px;
+    margin: 10px auto;
+    border: 0;
+    padding: 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    background: black;
+    color: white;
+    margin: 15px auto;
+    padding: 14px 25px;
+    border: solid black;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+form input:focus {
+    border: rgb(152, 241, 244);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: none;
+    color: black;
+}

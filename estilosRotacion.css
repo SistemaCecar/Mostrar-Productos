@@ -1,0 +1,101 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+
+body{
+  background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../media/composicion-colorida-esponjas-trapos-guantes-detergente-limpieza-general-fondo-concepto-servicio-limpieza_169016-10765.webp);
+  background-size: cover;
+  
+}
+
+
+.contenedorGrande > h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+    
+      
+}
+#tabla{
+    font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: bolder;
+  font-size: 3vh;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.contenedorDatos{
+  display: block;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: bolder;
+  font-size: 3vh;
+  color: white;
+  text-shadow: 2px black;
+  width: 35%;
+  margin-left: 30px;
+  margin-bottom: auto;
+  margin-top: 18px;
+  float:left;
+ 
+}
+
+.contenedorDatos > label > input{
+  margin-left: 40px;
+}
+
+#atras{
+    border-radius: 5px;
+    border-color: rgb(138, 184, 178);
+    border-style: solid;
+   background-color:rgba(34, 162, 235, 0.5);
+   margin-top: 10px;
+   padding: 10px;
+}
+
+#atras a{
+  text-decoration: none;
+    text-decoration: solid;
+    font-size: larger;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.contenedorGrande{
+  margin-top: 20px;
+  width: 60%;
+  position: relative;
+  float: right;
+}
+
+#agregar{
+  padding: 7px;
+  font-weight: bold;
+
+}

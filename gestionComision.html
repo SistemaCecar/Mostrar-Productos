@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAsoft</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estiloPagePrinciipal.css">
+    <link rel="stylesheet" href="estilosRegistro.css">
+    <style>
+        .container {
+            height: 500px;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        button{
+            background-color: black;
+            color: aliceblue;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="fondo">
+    <header class="flexContainer">
+        <nav class="contenerdorIzq">
+            <img src="iconoEmpresarial.png" alt="logoEmpresarial" class="logo">
+            <a href="inicioAdmin.html"><label class="inicio">JAsoft</label></a>
+        </nav>
+
+        <nav class="contenerdorDer">
+            <div class="flexContainer">
+                <div class="contenedorIzq" style="text-align: right;">
+                    <a href=""><img src="iconoNotificacion.png" alt="iconoNotificaciones" class="icono"></a>
+                    <span> Nombre Administrador</span>
+                </div>
+                <div class="contenedorDer">
+                    <ul class="principal">
+                        <li>
+                            <img src="usuario.png" alt="foto del empleado" class="foto">
+                            <ul class="miniMenu">
+                                <li>
+                                    <a href="Login.html">Cerrar Sesion</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <h1>Comisiones</h1>
+
+    <table style="width: 85%;" class="center">
+        <tr>
+            <th>ID EMPLEADO</th>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>TOTAL VENTAS</th>
+            <th>% COMISIÓN POR VENTA</th>
+            <th>TOTAL REMUNERACIÓN</th>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="center">
+    <button >EDITAR COMISIONES</button>&emsp;&emsp;&emsp;
+    <button >GUARDAR</button>&emsp;&emsp;&emsp;
+    <button>CANCELAR</button>
+</div>
+</div>
+</body>
+
+</html>
